@@ -13,7 +13,7 @@ export class Triangle implements Figure {
     public b: number,
     public c: number,
   ) {
-    if (a <= 0 || b <= 0 || c <= 0) {
+    if (this.a <= 0 || this.b <= 0 || this.c <= 0) {
       throw new Error('Values must be greater than 0');
     }
 
@@ -37,7 +37,7 @@ export class Circle implements Figure {
     public color: string,
     public radius: number,
   ) {
-    if (radius <= 0) {
+    if (this.radius <= 0) {
       throw new Error('Radius must be greater than 0');
     }
   }
